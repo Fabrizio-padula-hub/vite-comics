@@ -2,12 +2,15 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppProductsList from "./components/AppProductsList.vue";
 import AppInfoList from "./components/AppInfoList.vue";
+import AppInfoFooter from "./components/AppInfoFooter.vue";
+
 
 export default{
   components: {
     AppHeader,
     AppProductsList,
-    AppInfoList
+    AppInfoList,
+    AppInfoFooter,
   }
 }
 
@@ -23,6 +26,11 @@ export default{
     <AppProductsList></AppProductsList>
     <AppInfoList></AppInfoList>
   </main>
+
+  <footer>
+    <AppInfoFooter></AppInfoFooter>
+
+  </footer>
   
 </template>
 
