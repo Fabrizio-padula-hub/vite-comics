@@ -2,63 +2,79 @@
 export default{
     name: 'AppHeader'
 }
+
 </script>
 
 <template>
-    <div class="logo">
-        <img src="../assets/img/dc-logo.png" alt="">
-    </div>
+    <section class="align-center big-wrapper">
+        <div class="logo">
+            <img src="../assets/img/dc-logo.png" alt="">
+        </div>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">home</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a class="active" href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">home</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
 
 </template>
 
 <style scoped lang="scss">
-nav{
-    display: flex;
-    justify-content: end;
+@use '../style/partials/variables' as*;
 
-    ul{
+.align-center{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    max-width: 50px;
+}
+nav{
+    ul{
+        display: flex;
     }
+    
 
     a{
         color: black;
         padding: 10px;
         font-size: 13px;
+
+        &.active{
+            color: $bg-primary;
+        }
     }
 }
 
