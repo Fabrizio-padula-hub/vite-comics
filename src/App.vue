@@ -3,6 +3,7 @@ import AppHeader from "./components/AppHeader.vue";
 import AppProductsList from "./components/AppProductsList.vue";
 import AppInfoList from "./components/AppInfoList.vue";
 import AppInfoFooter from "./components/AppInfoFooter.vue";
+import AppFollowFooter from "./components/AppFollowFooter.vue";
 
 
 export default{
@@ -11,6 +12,7 @@ export default{
     AppProductsList,
     AppInfoList,
     AppInfoFooter,
+    AppFollowFooter
   }
 }
 
@@ -29,6 +31,7 @@ export default{
 
   <footer>
     <AppInfoFooter></AppInfoFooter>
+    <AppFollowFooter></AppFollowFooter>
 
   </footer>
   
