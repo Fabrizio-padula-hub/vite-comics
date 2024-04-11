@@ -1,7 +1,55 @@
 <script>
 export default{
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data(){
+        return{
+            links: [
+                {
+                    text: 'CHARACTERS',
+                    active: false
+                },
+                {
+                    text: 'COMICS',
+                    active: true
+                },
+                {
+                    text: 'MOVIES',
+                    active: false
+                },
+                {
+                    text: 'TV',
+                    active: false
+                },
+                {
+                    text: 'GAMES',
+                    active: false
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    active: false
+                },
+                {
+                    text: 'VIDEOS',
+                    active: false
+                },
+                {
+                    text: 'FANS',
+                    active: false
+                },
+                {
+                    text: 'NEWS',
+                    active: false
+                },
+                {
+                    text: 'SHOP',
+                    active: false
+                },
+                
+            ],
+        }
+    }
 }
+
 
 </script>
 
@@ -13,35 +61,8 @@ export default{
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a class="active" href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">home</a>
+                <li v-for="singleLink in links">
+                    <a :class="{ 'active': singleLink.active }" href="#">{{ singleLink.text }}</a>
                 </li>
             </ul>
         </nav>
