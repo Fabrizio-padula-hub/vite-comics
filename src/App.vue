@@ -4,6 +4,7 @@ import AppProductsList from "./components/AppProductsList.vue";
 import AppInfoList from "./components/AppInfoList.vue";
 import AppInfoFooter from "./components/AppInfoFooter.vue";
 import AppFollowFooter from "./components/AppFollowFooter.vue";
+import AppHero from "./components/AppHero.vue";
 
 
 export default{
@@ -12,7 +13,8 @@ export default{
     AppProductsList,
     AppInfoList,
     AppInfoFooter,
-    AppFollowFooter
+    AppFollowFooter,
+    AppHero
   }
 }
 
@@ -25,6 +27,7 @@ export default{
   </header>
 
   <main>
+    <AppHero></AppHero>
     <AppProductsList></AppProductsList>
     <AppInfoList></AppInfoList>
   </main>

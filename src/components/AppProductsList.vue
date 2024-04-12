@@ -7,7 +7,7 @@ export default{
 <template>
     <section>
         <h2>
-        >>>Content goes here<<<
+            >>>Content goes here<<<
         </h2>
     </section>
 </template>
@@ -15,7 +15,6 @@ export default{
 <style scoped lang="scss">
 section{
     background-color: black;
-    min-height: 160px;
     text-align: center;
     padding: 20px;
 
@@ -23,7 +22,4 @@ section{
         color: white;
     }
 }
-
-
-
 </style>

@@ -60,11 +60,6 @@ export default{
                 </div>
             </div>
             <!-- /container info dc e site -->
-            <!-- img dc storta -->
-            <div class="img-background">
-                <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
-            </div>
-            <!-- /img dc storta -->
         </div>
     </section>
 </template>
@@ -87,25 +82,20 @@ li{
 
 .bg-comics{
     background-image: url(../assets/img/footer-bg.jpg);
-    min-height: 350px;
-    padding: 20px 0;
     color: white;
-    position: relative;
 
     .big-wrapper{
         display: flex;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: 100%;
+       padding: 30px 0;
     }
 
     .container-info-dx{
         display: flex;
     }
 
-    // .img-background{
-    //     position: absolute;
-    //     top: 0;
-    //     right: 30px;
-    //     width: 40%;
-    // }
 }
 
 
