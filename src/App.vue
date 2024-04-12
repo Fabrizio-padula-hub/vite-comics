@@ -6,7 +6,6 @@ import AppInfoFooter from "./components/AppInfoFooter.vue";
 import AppFollowFooter from "./components/AppFollowFooter.vue";
 import AppHero from "./components/AppHero.vue";
 
-
 export default{
   components: {
     AppHeader,
@@ -14,7 +13,7 @@ export default{
     AppInfoList,
     AppInfoFooter,
     AppFollowFooter,
-    AppHero
+    AppHero,
   }
 }
 
