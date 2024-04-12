@@ -6,21 +6,17 @@ export default{
 </script>
 
 <template>
-        <div class="card">
-            <div class="card-img">
-                <img :src="image" alt="">
-            </div>
-            <div class="text-card">
-                {{ title }}
-            </div>
+    <div class="card">
+        <div class="card-img">
+            <img :src="image" alt="">
         </div>
-        
-    
+        <div class="text-card">
+            {{ title }}
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
-
-
 .card{
     width: calc((100% / 6) - 10px);
 
@@ -41,11 +37,4 @@ export default{
         font-size: 12px;
     }
 }
-
-    
-
-
-
-
-
 </style>
